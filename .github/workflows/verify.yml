@@ -6,6 +6,9 @@ jobs:
   r:
     runs-on: ${{ matrix.os }}
     timeout-minutes: 15
+    defaults:
+      run:
+        shell: bash
     strategy:
       matrix:
         include:
