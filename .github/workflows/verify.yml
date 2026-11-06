@@ -4,10 +4,13 @@ permissions:
   contents: read
 jobs:
   r:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
     strategy:
       matrix:
-        r: ['4.4', 'release']
+        include:
+          - {os: ubuntu-latest, r: '4.4'}
+          - {os: windows-latest, r: 'release'}
     steps:
       - uses: actions/checkout@v4
       - uses: r-lib/actions/setup-r@v2
