@@ -1,0 +1,7 @@
+export(audit_cohorts)
+export(synthetic_cohorts)
+export(write_cohort_report)
+S3method(print,cohort_audit)
+S3method(plot,cohort_audit)
+importFrom(graphics,barplot)
+importFrom(utils,write.csv)

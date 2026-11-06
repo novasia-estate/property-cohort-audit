@@ -1,0 +1,17 @@
+Package: propertycohorts
+Type: Package
+Title: Audit Comparability of Property Listing Cohorts
+Version: 1.0.0
+Authors@R: person("NovAsia", "Estate", role = c("aut", "cre"), email = "info@novasia.estate")
+Description: Audits two explicitly labelled listing snapshots before comparing
+    their mean values. Reports excluded rows, unsupported cells, common-cohort
+    coverage, and an exact symmetric decomposition into within-cell and
+    composition differences. Produces local HTML and formula-safe CSV reports
+    without runtime dependencies outside base R. These are descriptive audits
+    of supplied observations, not market indices or causal estimates.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: graphics, utils
+URL: https://novasia.estate/, https://github.com/novasia-estate/property-cohort-audit
+BugReports: https://github.com/novasia-estate/property-cohort-audit/issues
